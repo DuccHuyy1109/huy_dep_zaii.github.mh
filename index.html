@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trần Phương Anh</title>
+    <style>
+        body{
+            padding: 20px;
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+            background-color: bisque;
+        }
+        img{
+            width: 100%;
+            height: 100%;
+        }
+        h2{
+            margin-bottom: 0.5em;
+            font-family: ;
+        }
+        .gird-container{
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px,1fr));
+            grid-gap: 1em;
+        }
+        .location-listing{
+            position: relative;
+        }
+        .location-image{
+            line-height: 0;
+            overflow: hidden;
+        }
+        .location-image img{
+            fill: blur(0px);
+            transition: filter 0.5 ease-in-out ; 
+            transform: scale(1.1);
+        }
+        .location-title{ transition: op;
+            font-size: 1.5em;
+            font-weight: bold;
+            text-decoration: none;
+            z-index: 1;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            opacity: 0;
+            transform: opcity;
+            background: cadetblue(90, 0, 10,0.4);
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .location-listing:hover  .location-title{opacity: 1;}
+        .location-listing:hover  .location-image img 
+        {filter: blur(2px); }
+        @media {hover:none;}
+        
+    </style>
+</head>
+<body>
+    <div class="child-page-listing">
+        <h2> Our Locations</h2>
+        <div class="gird-container">
+            <article id="11" class="location-listing">
+                <a class="location-title" href="@" >San Fansisco</a>
+                <div class="location-image">
+                <a href="@" > <img src="./z4220945739755_068e9b7844ba2ea414a39bd7db4c91a4.jpg" width="300" height="170" alt="San Fansisco" ></a>
+                </div>
+            </article>
+
+
+            <article id="22" class="location-listing">
+                <a class="location-title" href="@" >London</a>
+                <div class="location-image">
+                <a href="@" > <img src="./z4220945766150_acb4b09a1e0168438b49b75d9d9f34f0.jpg" width="300" height="170" alt="London" ></a>
+                </div>
+            </article>
+
+
+            <article id="33" class="location-listing">
+                <a class="location-title" href="@" >Be Jing</a>
+                <div class="location-image">
+                <a href="@" > <img src="./z4220945801017_985c4cfdf0a6a34794d2e30b93bed7e8.jpg" width="300" height="170" alt="Be Jing" ></a>
+                </div>
+            </article>
+
+
+
+            <article id="33" class="location-listing">
+                <a class="location-title" href="@" >Cape Town</a>
+                <div class="location-image">
+                <a href="@" > <img src="./z4220945853087_fefc1f4b9dc45129258617e8733e2062.jpg" width="300" height="170" alt="Cape Town" ></a>
+                </div>
+            </article>
+
+
+
+            <article id="33" class="location-listing">
+                <a class="location-title" href="@" >New York</a>
+                <div class="location-image">
+                <a href="@" > <img src="./z4220945878211_35449f4554aab92e70f1f834e9d52d83.jpg" width="300" height="170" alt="New York" ></a>
+                </div>
+            </article>
+            
+
+
+            <article id="33" class="location-listing">
+                <a class="location-title" href="@" >Paris</a>
+                <div class="location-image">
+                <a href="@" > <img src="./z4220945909439_3ff6f04691c57ce9f632307936f387f8.jpg" width="300" height="170" alt="Paris" ></a>
+                </div>
+            </article>
+
+
+
+        </div>
+          
+       
+
+</body>
+</html>
